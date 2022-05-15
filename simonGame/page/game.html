@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width"><link rel="stylesheet" href="./style.css"> -->
+    <title>Document</title>
+    <link rel="stylesheet" href="./ngame.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+</head>
+<body>
+    <span></span>
+    <div id="lside">
+        <button id="out" >⨠</button>
+        <h1>welcome</h1>
+        <h2 id="userName"></h2>
+        <p>steps: <span id="steps"></span></p>
+        <p>your scores: </p>
+        <!-- <p id="scores"></p> -->
+        <div id="star"></div>
+        <p>errors: <span id="errors"></span></p>
+        <h2>good luck</h2>
+    </div>
+    <div id="container">
+    <header></header>
+        <main>
+            <!-- ⨞⨞⨞⨞   ⨠   ↻   □  ▷▷      ⭐🌟   -->
+            <div id="bott">
+                <div id="left-top" class="botton"></div>
+                <div id="right-top" class="botton"></div>
+                <div id="left-bottom" class="botton"></div>
+                <div id="right-bottom" class="botton"></div>
+                <div id="center">
+                    <button id="playStop">▷ start</button>
+                    <input id="speed" type="range"name="speed" min="1" max="3"></input>
+                    <button id="startNew" >↻ restart</button>
+                </div >
+            </div>
+        </main>
+        <!-- <div id="rside">
+        </div>
+        <div id="place">
+        </div>
+        <div id="scores">
+        </div>
+        <div id="steps">
+        </div> -->
+    </div>
+    <section>
+        <audio id="startAudio" src="../sounds/start.mp3"></audio>
+        <audio id="1Audio" src="../sounds/1.m4a"></audio>
+        <audio id="2Audio" src="../sounds/2.m4a"></audio>
+        <audio id="3Audio" src="../sounds/3.m4a"></audio>
+        <audio id="4Audio" src="../sounds/4.m4a"></audio>
+    </section>
+    <script src="./game.js"></script>
+</body>
+</html>

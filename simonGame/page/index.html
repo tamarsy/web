@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <body>
+        <header>
+            <h1 id="logo">tarotyGames</h1>
+            <section id="menue">
+                    <button class="button" onclick="cleanAll();document.getElementById('logIn').style.display='block';onPressLogIn();" style="width:auto;">Sign In</button>
+                    <button class="button" onclick="cleanAll();document.getElementById('signUp').style.display='block'" style="width:auto;">Sign Up</button>
+                    <a  class="button" onclick="cleanAll()"; style = "width:auto;" href="#aboutLink">about</a>
+            </section>
+        </header>
+        <div id="mainHome">
+            <section id="gamesLinks">
+                <div onclick="none()">
+                    <div class="none" href="./index.html">
+                        <section class="section">
+                            <div class="div"></div>
+                            <p class="p"></p>
+                            <span class="span"></span>
+                            <b class="b"></b>
+                            <img class="i" src="../images/p1.png" alt="smily"></img>
+                        </section>
+                    </div>
+                </div>
+                <div onclick="simon()">
+                    <section id ="simon" class="section">
+                        <div class="div"></div>
+                        <p class="p"></p>
+                        <span class="span"></span>
+                        <b class="b"></b>‏‏
+                        <img class="i" src="../images/p2.png" alt="simon">
+                    </section>
+                </div>
+                <div onclick="none()">
+                    <div class="none" href="./index.html">
+                        <section class="section">
+                            <div class="div"></div>
+                            <p class="p"></p>
+                            <span class="span"></span>
+                            <b class="b"></b>
+                            <img class="i" src="../images/p1.png" alt="smily"></img>
+                        </section>
+                    </div>
+                </div>
+                <div onclick="none()">
+                    <div class="none" href="./index.html">
+                        <section class="section">
+                            <div class="div"></div>
+                            <p class="p"></p>
+                            <span class="span"></span>
+                            <b class="b"></b>
+                            <img class="i" src="../images/p1.png" alt="smily"></img>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <p>
+                </p>
+
+                <p>
+                    Simon is a rhythmic electronic game invented in the United States designed to develop memory.
+                    The game first appeared at a discotheque in New York in 1978 and was an immediate success.
+                    The game also became a cultural pop symbol of the 1980s. The game is named after the children's game Simon Said,
+                    and is based on a 1974 Atari game that failed in the market.
+                </p>
+
+                <p>
+                    Simon is a rhythmic electronic game invented in the United States designed to develop memory.
+                    The game first appeared at a discotheque in New York in 1978 and was an immediate success.
+                    The game also became a cultural pop symbol of the 1980s. The game is named after the children's game Simon Said,
+                    and is based on a 1974 Atari game that failed in the market.
+                </p>
+
+                <p id="aboutLink">
+                    Simon is a rhythmic electronic game invented in the United States designed to develop memory.
+                    The game first appeared at a discotheque in New York in 1978 and was an immediate success.
+                    The game also became a cultural pop symbol of the 1980s. The game is named after the children's game Simon Said,
+                    and is based on a 1974 Atari game that failed in the market.
+                </p>
+
+                <p>
+                    Simon is a rhythmic electronic game invented in the United States designed to develop memory.
+                    The game first appeared at a discotheque in New York in 1978 and was an immediate success.
+                    The game also became a cultural pop symbol of the 1980s. The game is named after the children's game Simon Said,
+                    and is based on a 1974 Atari game that failed in the market.
+                </p>
+            </section>
+        </div>
+        <footer>
+            <p>welcome</p>
+        </footer>
+    
+        <!-- logIn -->
+        <div id="logIn" class="all">
+            <form class="content"  onsubmit="handleSubmitLogIn()" method="post">
+                <div class="imgcontainer">
+                <span onclick="document.getElementById('logIn').style.display='none'" class="close">&times;</span>
+                </div>
+                <div class="container">
+                <label for="uname"><b>uname</b></label>
+                <input type="text" placeholder="User name" name="uname" required>
+
+                <label for="psw"><b>password</b></label>
+                <input type="password" placeholder="Password" name="Password" required>
+                <input type="submit" value="logIn">
+                </div>
+                <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('logIn').style.display='none'" class="cancelbtn">cancle</button>
+                </div>
+            </form>
+        </div>
+
+    <!-- singUp -->
+    <div id="signUp" class="all">
+        <form class="content" onsubmit="handleSubmitSignUp()" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('signUp').style.display='none'" class="close">&times;</span>
+                </div>
+            <div class="container">
+                <label for="uname"><b>Email</b></label>
+                <input type="text" placeholder="Email Address" name="Email" required>
+
+                <label for="uname"><b>uname</b></label>
+                <input type="text" placeholder="User name" name="uname" required>
+
+                <label for="psw"><b>password</b></label>
+                <input type="password" placeholder="Password" name="Password" required>
+                    
+                <label>
+                <input type="checkbox" checked="checked" name="remember">remember me
+                </label> 
+
+                <button type="submit">Sign Up</button>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('signUp').style.display='none'" class="cancelbtn">cancle</button>
+            </div>
+        </form>
+    </div>
+    <script src="./index.js" ></script> -->
+</body>
+</html>

@@ -1,0 +1,135 @@
+
+      .section {
+        margin: 16% 3%;
+        height: 6rem;
+        width: 26rem;
+        transform: translate3d(-50%, -50%, 0);
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        perspective: 1200;
+        touch-action: none;
+      }
+      .section.hold {
+        -webkit-animation-name: addHoldTension;
+                animation-name: addHoldTension;
+        -webkit-animation-duration: 8s;
+                animation-duration: 8s;
+        -webkit-animation-delay: 0;
+                animation-delay: 0;
+        -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+        -webkit-animation-timing-function: cubic-bezier(0, 0.99, 0.16, 0.99);
+                animation-timing-function: cubic-bezier(0, 0.99, 0.16, 0.99);
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+      }
+      .section.hold .div, .section.hold .p, .section.hold .span, .section.hold .b {
+        -webkit-animation-name: addHoldTension;
+                animation-name: addHoldTension;
+        -webkit-animation-duration: 8s;
+                animation-duration: 8s;
+        -webkit-animation-delay: 0;
+                animation-delay: 0;
+        -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+        -webkit-animation-timing-function: cubic-bezier(0, 0.99, 0.16, 0.99);
+                animation-timing-function: cubic-bezier(0, 0.99, 0.16, 0.99);
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+      }
+      section.animate {
+        -webkit-animation: spring-scale 4s 0s 1 linear forwards;
+                animation: spring-scale 4s 0s 1 linear forwards;
+      }
+      section.animate .div, section.animate .p, section.animate .span, .section.animate .b {
+        -webkit-animation-name: spring-scale;
+                animation-name: spring-scale;
+        -webkit-animation-delay: 0;
+                animation-delay: 0;
+        -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+      }
+      
+      .div, .p, .i, .b, .span {
+        box-sizing: border-box;
+        display: inline-block;
+        font-size: 1.5rem;
+        width: 5rem;
+        height: 5rem;
+        line-height: 6rem;
+        vertical-align: middle;
+        margin: 0 auto;
+        border: 0.5rem solid #222;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+      }
+      
+      .i {
+        background: #fbfbfe;
+        color: #234549;
+        border-color: #fbfbfe;
+        -webkit-animation: none;
+                animation: none;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        perspective: 1200;
+      }
+
+      .b {
+        width: 8.2rem;
+        height: 8.2rem;
+        border-width: 0.7rem;
+        border-color: #F58F39;
+        -webkit-animation-duration: 4.3s;
+                animation-duration: 4.3s;
+      }
+      
+      .span {
+        width: 10rem;
+        height: 10rem;
+        border-color: #40E64F;
+        -webkit-animation-duration: 4.66s;
+                animation-duration: 4.66s;
+      }
+      
+      .p {
+        width: 12.1rem;
+        height: 12.1rem;
+        border-width: 0.6rem;
+        border-color: #E0C93B;
+        -webkit-animation-duration: 5.32s;
+                animation-duration: 5.32s;
+      }
+      
+      .div {
+        width: 14rem;
+        height: 14rem;
+        border-color: #FF4B47;
+        -webkit-animation-duration: 5.98s;
+                animation-duration: 5.98s;
+      }
+      
+      @-webkit-keyframes addHoldTension {
+        0% {
+          transform: translate3d(-50%, -50%, 0) scale(1);
+        }
+        99%, 100% {
+          transform: translate3d(-50%, -50%, 0) scale(0.25);
+        }
+      }
+      
+      @keyframes addHoldTension {
+        0% {
+          transform: translate3d(-50%, -50%, 0) scale(1);
+        }
+        99%, 100% {
+          transform: translate3d(-50%, -50%, 0) scale(0.25);
+        }
+      }

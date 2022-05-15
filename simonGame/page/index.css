@@ -1,0 +1,181 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+#gamesLinks{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 100%;
+  padding: 2%;
+}
+
+header{
+  background-color: #f44336;
+  max-height: 25vh;
+}
+
+#mainHome{
+  background-color: #343645;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#about{
+  display: flex;
+  flex-direction: column;
+  background-color: #343645;
+}
+
+#gamesLinks{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  background-color:#343645;
+  
+}
+
+#menue{
+  display: flex;
+  justify-content: flex-end; 
+  margin-right: 5%;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 1% 1%;
+  margin: 2% 0%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.button{
+  background-color: #343645;
+  color: white;
+  padding: 1% 1.4%;
+  margin: 1% 1%;
+  border: none;
+  width: 100%;
+  border-radius: 8%;
+  text-decoration-line: none;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 1% 2%;
+  background-color: #f44336;
+}
+
+.container {
+  padding: 2%;
+}
+
+span.psw {
+  float: right;
+  padding-top: 4%;
+}
+
+.all {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 20%;
+  width: 30%;
+  height: auto;
+  overflow: auto;
+  background-color: white;
+  padding-top: 1%;
+}
+
+.content {
+  background-color: #ccc;
+  margin: 5% auto 15% auto;
+  width: 80%;
+}
+
+.close {
+    float: right;
+    margin-top: 2.5%;
+    margin-right: 4%;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#aboutBotton{
+  width:auto;
+  text-decoration-line: none;
+}
+
+#about p{
+  background-color: #f44336;
+  font-size: 300%;
+  width: 60%;
+  color: white;
+  max-width: 100vh;
+  text-align: center;
+  font-family: Helvetica;
+  word-spacing: 9px;
+  padding: 3% 9%;
+  margin:9% 20%;
+}
+
+footer{
+  background-color: #343645;
+}
+
+footer p{
+  text-align: center;
+  font-family: Helvetica;  
+  margin-left: 5%;
+  color: white;
+  font-size: 300%;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+      display: block;
+      float: none;
+  }
+  .cancelbtn {
+      width: 100%;
+  }
+}
+
+#logo{
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  box-sizing: border-box;
+  color: white;
+  font-size: 90px;
+  font-style: italic;
+}
+
+
+
+@keyframes pulsing {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
