@@ -1,0 +1,16 @@
+main>div{
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    height: 100%;
+}
+
+main img{
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    main>div{
+        height: 50%;
+    }   
+}

@@ -1,0 +1,31 @@
+header{
+    background-color: white;
+    grid-area: 1/1/4/10;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#space{
+    visibility: hidden;
+    width: 100%;
+    height: 10%;
+    flex: 1;
+}
+
+#logo{
+    background-color: gold;
+    width: 100%;
+    height: 50%;
+}
+
+#nav-div{
+    width: 100%;
+    height: auto;
+}
+
+#logo>img{
+    width: 5.4%;
+    margin-left: 4%;
+    box-shadow: 2px 2px 4px rgba(128, 128, 128, 0.788); 
+}
